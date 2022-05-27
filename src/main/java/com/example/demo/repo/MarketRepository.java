@@ -86,7 +86,7 @@ public class MarketRepository implements AbstractRepo<DataDAO> {
             account.getBooks().put(book.getName(), cp);
         }
 
-        log.info(String.format("Account bough books: [%s by %s] in amount: %s", book.getName(), book.getAuthor(), amount));
+        log.info(String.format("Account bought books: [%s by %s] in amount: %s", book.getName(), book.getAuthor(), amount));
         log.info(String.format("Money on the account after transaction: %s", account.getMoney()));
     }
 
